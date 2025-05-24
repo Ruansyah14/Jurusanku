@@ -1,0 +1,46 @@
+/* Custom CSS overrides for hideIn animation text color */
+nav a {
+  color: #7b121b !important; /* dark red */
+  opacity: 1 !important;
+}
+
+/* If hideIn animation is applied, ensure text color is dark red */
+@keyframes hideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    color: #7b121b !important;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    color: #7b121b !important;
+  }
+}
+
+/* New hide animation: fade out, shift left slightly, and color black */
+@keyframes hide {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+    color: #000000;
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-10px);
+    color: #000000;
+  }
+}
+
+/* CSS class to apply hide animation and spacing */
+.hide {
+  animation: hide 0.5s forwards;
+  color: #000000 !important;
+  margin-right: 10px; /* spacing to avoid elements being too close */
+}
+
+/* Shift the .btn-primary button slightly to the left */
+.btn-primary {
+  margin-left: 0; /* reset any left margin */
+  margin-right: auto; /* push button to left */
+}
