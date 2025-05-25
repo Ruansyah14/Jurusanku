@@ -226,7 +226,7 @@
     </section>
         </div>
         <div class="hero-image">
-            <img src="{{ asset('build/assets/red gradu.jpg') }}" alt="Ilustrasi Minat dan Bakat" style="max-width: 120%; height: auto;" />
+            <img src="{{ asset('build/assets/graduation-concept-illustration.png') }}" alt="Ilustrasi Minat dan Bakat" style="max-width: 120%; height: auto;" />
         </div>
     </section>
     <section class="ptn-cards">
