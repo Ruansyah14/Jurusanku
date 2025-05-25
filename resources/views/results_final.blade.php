@@ -32,7 +32,7 @@
         <div class="bg-white rounded-lg p-5 shadow-md">
             <div class="flex items-center justify-between mb-3">
                 <h2 class="text-2xl font-semibold text-gray-900">{{ $cluster->name }}</h2>
-                <span class="text-red-700 font-bold text-lg">{{ number_format($cluster->matchScore * 100, 2) }}%</span>
+<span class="text-red-700 font-bold text-lg">{{ number_format($cluster->matchScore * 20, 2) }}%</span>
             </div>
             <p class="text-gray-700 mb-5">{{ $cluster->description }}</p>
 

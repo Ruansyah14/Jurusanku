@@ -26,7 +26,7 @@ class MajorClusters
         'science_tech' => [
             'name' => 'Sains dan Teknologi',
             'description' => 'Kamu punya bakat dan minat yang kuat di bidang sains dan teknologi. Kemampuan analitismu, kecintaan pada eksperimen dan penemuan membuatmu cocok di jurusan-jurusan ini.',
-            'traits' => ['analytical', 'logical', 'investigative', 'problem-solving', 'scientific'],
+            'traits' => ['analytical', 'logical', 'scientific'],
             'majors' => [
                 [
                     'name' => 'Teknik Informatika',
@@ -67,7 +67,7 @@ class MajorClusters
         'creative_digital' => [
             'name' => 'Industri Kreatif Digital',
             'description' => 'Kamu memiliki kombinasi unik antara kreativitas dan pemahaman teknologi. Jurusan-jurusan ini memungkinkanmu mengekspresikan kreativitas melalui media digital.',
-            'traits' => ['creative', 'artistic', 'innovative', 'technical', 'user-oriented'],
+            'traits' => ['creative', 'artistic', 'innovative', 'technical'],
             'majors' => [
                 [
                     'name' => 'Desain Komunikasi Visual',

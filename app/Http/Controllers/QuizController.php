@@ -69,10 +69,10 @@ $score = QuizHelper::calculateWeightedMatchScore($userTraits, $cluster['traits']
         // Pilih rekomendasi cluster berdasarkan threshold
         $recommendedClusters = [];
         if ($topClusterScore >= $threshold) {
-            $recommendedClusters[] = $topCluster;
+            $recommendedClusters[$topClusterKey] = $topCluster;
         }
         if ($secondCluster && $secondClusterScore >= $threshold * 0.8) {
-            $recommendedClusters[] = $secondCluster;
+            $recommendedClusters[$secondClusterKey] = $secondCluster;
         }
 
         // Gabungkan rekomendasi jurusan, universitas, dan prospek karir dari cluster yang direkomendasikan
@@ -160,7 +160,7 @@ $score = QuizHelper::calculateWeightedMatchScore($userTraits, $cluster['traits']
         ]);
 
         // Kirim data tambahan ke view melalui session atau redirect dengan flash data
-  return redirect()->route('results', ['result_id' => $result->id])
+return redirect()->route('results', ['result_id' => $result->id])
     ->with([
         'topClusters' => collect($recommendedClusters)->map(function ($cluster, $key) use ($clusterScores) {
             return (object)[
