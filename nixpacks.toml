@@ -1,6 +1,9 @@
 [phases.setup]
 nixPkgs = ["php", "phpPackages.composer", "nodejs"]
 
+# Tambahkan agar nodejs juga tersedia di runtime container
+runtimePkgs = ["php", "nodejs"]
+
 [phases.build]
 cmds = [
   "composer install --no-dev --optimize-autoloader",
